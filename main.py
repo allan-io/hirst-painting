@@ -7,6 +7,7 @@ screen.colormode(255)
 timmy = Turtle()
 timmy.shape("turtle")
 timmy.penup()
+timmy.speed("fastest")
 color_palate = colorgram.extract('hirst.jpg', 20)
 
 color_list = []
@@ -32,6 +33,8 @@ for _ in range(10):
     for _ in range(9):
         timmy.dot(20, random.choice(rgb_list))
         timmy.forward(50)
+
+timmy.hideturtle()
 
 
 #check position position()
