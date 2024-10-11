@@ -1,9 +1,6 @@
 import colorgram
-from PIL import Image
 
-img = Image.open("hirst.jpg")
-
-color_palate = colorgram.extract(img, 10)
+color_palate = colorgram.extract('hirst.jpg', 10)
 
 color_list = []
 for color in color_palate:
